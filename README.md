@@ -1,2 +1,2 @@
-# trial
-https://yash0501.github.io/trial/
+# EDC-JSS-Website
+A simple website guiding visitors about EDCJSS, its vision, goals, events, past guests, partners, and sponsors.
