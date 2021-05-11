@@ -132,6 +132,9 @@ p{
 
 .why_content{
     text-align: justify;
+    margin: 10px;
+    margin-right: 25px;
+    line-height: 2;
 }
 
 .why h3{
@@ -143,7 +146,7 @@ p{
 }
 
 .brag h6{
-    margin: 0.35rem 0;
+    margin: 20px 0;
 }
 
 .stats{
@@ -213,11 +216,17 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0!important;
+    margin-bottom: 20px;
 }
 
 .social i{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0 10px;
+    color: gray;
+}
+
+.social > i:hover{
+    color: #0066b2;
 }
 
 footer{
@@ -237,13 +246,20 @@ footer{
 }
 
 .copyright{
-    font-size: 12px;
-    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0066b2;
+    margin-bottom: 0;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .img{
     display: flex;
     justify-content: center;
+    margin: 25px 0;
 }
 
 @media (max-width: 900px) and (min-width: 768px){
