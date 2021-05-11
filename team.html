@@ -186,21 +186,36 @@
 					var Data = data.second;
 					for (var i = 0; i < Data.length; i++) {
 						var box = document.createElement("div");
-						box.setAttribute("class", "box");
+						box.setAttribute("class", "col-lg-4 col-md-6");
 
-						var html = `<div class="head_team ">
-							<div class="content">
-						<div class="content-overlay"></div>
-										<img src=${"./img/" + Data[i].profile} class="img" alt="Photo" width="300px"/>
-										<div class="content-details fadeIn-top">
+						/*var html = `<div class="head_team">
+										<img src=${"./img/team" + Data[i].profile} class="img" alt="Photo" />
 										<h5 class=" pt-3">${Data[i].name}</h5>
 										<h6 style="margin-bottom: 0%" class=" pb-1">${Data[i].designation}</h6>
 										${getLinks(Data[i])}
 										</div>
 										</div>
 									</div>
-						`;
+						`;*/
 
+<<<<<<< HEAD
+=======
+                        var html = `
+                                        <div class="team__item set-bg" style="background-image: url(${"./img/team/" + Data[i].profile});">
+                                        <div class="team__text">
+                                            <div class="team__title">
+                                                <h4>${Data[i].name}</h4>
+                                                <span>${Data[i].designation}</span>
+                                                </div>
+                                                
+                                                <div class="team__social">
+                                                    ${getLinks(Data[i])}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+
+>>>>>>> 56413f3099b30a244e30dcb56ae90a6d4437de66
 						box.innerHTML = html;
 						document.getElementById("two").appendChild(box);
 					}
